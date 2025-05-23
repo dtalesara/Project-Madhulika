@@ -1,2 +1,2 @@
 # Project-Madhulika
-Website that empowers women 
+Website that empowers women. There are so many resources out there to help women in various situations however not many women are aware of these resources.Project Madhulika essentially takes all of these resources and puts it onto one powerful website page. The help provided by this website ranges from emergency,medical,legal,financial to self-defence or even education. I hope that you share this website with many women in South Africa who are in various situations. If you are a software developer or are really good with coding,please contact me so that we can strengthen the lives of women both in South Africa and globally.
