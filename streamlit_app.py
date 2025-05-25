@@ -40,7 +40,7 @@ resources = {
         ("FoodForward SA, Call: 012 345 6789 (24/7 helpline)", "", "")  # fixed to tuple with empty description and link
     ],
     "🏠 Shelter Services": [
-        ("People Opposing Women Abuse (POWA)", "Support services.", 011 642 4345/6),
+        ("People Opposing Women Abuse (POWA)", "Support services.", "011 642 4345/6"),
         ("Frida Hartley Shelter", "Support for women and children.", "https://fridahartley.org/"),
         ("Ikhaya Lethemba Women’s Shelter", "Contact at 011 242 2530.", "https://www.joburg.org.za/services_/Pages/Emergency-Services.aspx"),
         ("Bethany Home for Abused Women", "Contact at 011 614 3245.", "https://www.joburg.org.za/services_/Pages/Emergency-Services.aspx"),
