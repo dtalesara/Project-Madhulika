@@ -61,7 +61,7 @@ resources = {
     ("Mothers Against Crime", "Community safety and self-defense workshops.", "https://mothersagainstcrime.co.za/"),
     ("Women's Safety and Self-Defense Classes", "Find local self-defense classes and resources.", "https://www.selfdefense.co.za/"),
     ("SAPS Crime Prevention", "Police advice and safety tips for personal protection.", "https://www.saps.gov.za/services/crime_prevention.php"),
-    ("https://www.youtube.com/watch?v=kWPXXPNN9Ts")
+    (Watch this: "https://www.youtube.com/watch?v=kWPXXPNN9Ts")
 ]
 }
 
