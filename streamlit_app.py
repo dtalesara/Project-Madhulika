@@ -1,7 +1,12 @@
 
+
 import streamlit as st
 
-st.title("📚 Support Resources")
+st.set_page_config(page_title="Project Madhulika", page_icon="🌙")
+
+# Title and image
+st.title("🌙 Project Madhulika")
+st.image("moon_image.jpg", caption="Empowering women through resources", use_column_width=True)
 
 resources = {
     "📞 Emergency Services": [
