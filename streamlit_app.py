@@ -36,7 +36,8 @@ resources = {
     "🍲 Food Assistance": [
         ("FoodForward SA", "Food distribution services.", "https://foodforwardsa.org/"),
         ("Community Food Kitchens", "Available in Yeoville & Braamfontein.", "https://www.joburg.org.za/services_/Pages/Emergency-Services.aspx"),
-        ("Ladles of Love", "Contact at 071 747 7311.", "https://ladlesoflove.org.za/")
+        ("Ladles of Love", "Contact at 071 747 7311.", "https://ladlesoflove.org.za/"),
+        ("FoodForward SA, Call: 012 345 6789 (24/7 helpline)")
     ],
     "🏠 Shelter Services": [
         ("Frida Hartley Shelter", "Support for women and children.", "https://fridahartley.org/"),
@@ -48,11 +49,9 @@ resources = {
     "📚 Educational Resources": [
         ("FunDza Literacy Trust", "Free online reading resources.", "https://www.fundza.co.za/"),
         ("UJ Adult Learning Centre", "Literacy and numeracy programs.", "https://www.uj.ac.za/faculties/education/adult-education/"),
-        ("Learn How to Sew", "Beginner-friendly sewing tutorials.", "https://www.youtube.com/@LearnHowToSew/videos"),
         ("Coursera Free Courses", "Various online courses.", "https://www.coursera.org/"),
         ("GirlCodeZA", "Coding bootcamps for women.", "https://girlcode.co.za/"),
         ("dorKk", "South African school curriculum video lessons.", "https://www.dorkk.online/"),
-        ("Siyavula", "Free Maths & Science textbooks.", "https://www.siyavula.com/"),
         ("Learn the Net", "Basic computer and internet skills.", "http://www.learnthenet.com/"),
         ("YALI Network", "Courses on leadership and business.", "https://yali.state.gov/"),
         ("Women Techmakers (Google)", "Tech talks and resources.", "https://www.womentechmakers.com/")
