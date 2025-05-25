@@ -57,7 +57,6 @@ resources = {
         ("Women Techmakers (Google)", "Tech talks and resources.", "https://www.womentechmakers.com/")
     ],
     "🛡️ Self-Defense Resources": [
-    ("POWA (People Opposing Women Abuse)", "Support and self-defense training for women.", "https://www.powa.co.za/"),
     ("Mothers Against Crime", "Community safety and self-defense workshops.", "https://mothersagainstcrime.co.za/"),
     ("Women's Safety and Self-Defense Classes", "Find local self-defense classes and resources.", "https://www.selfdefense.co.za/"),
     ("SAPS Crime Prevention", "Police advice and safety tips for personal protection.", "https://www.saps.gov.za/services/crime_prevention.php"),
