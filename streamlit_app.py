@@ -1,5 +1,6 @@
 
-import streamlit as st
+
+   import streamlit as st
 
 st.title("📚 Support Resources")
 
@@ -37,7 +38,7 @@ resources = {
         ("FoodForward SA", "Food distribution services.", "https://foodforwardsa.org/"),
         ("Community Food Kitchens", "Available in Yeoville & Braamfontein.", "https://www.joburg.org.za/services_/Pages/Emergency-Services.aspx"),
         ("Ladles of Love", "Contact at 071 747 7311.", "https://ladlesoflove.org.za/"),
-        ("FoodForward SA, Call: 012 345 6789 (24/7 helpline)")
+        ("FoodForward SA Helpline", "Call: 012 345 6789 (24/7 helpline)")
     ],
     "🏠 Shelter Services": [
         ("Frida Hartley Shelter", "Support for women and children.", "https://fridahartley.org/"),
@@ -58,10 +59,37 @@ resources = {
     ]
 }
 
+# Sidebar: select category (including an 'All' option)
+category_filter = st.sidebar.selectbox("Filter by category", ["All"] + list(resources.keys()))
+
+# Sidebar: search input
+search_term = st.sidebar.text_input("Search resources by keyword").lower()
+
+def match_service(service, search):
+    # Check if search term in name or description (case insensitive)
+    return search in service[0].lower() or search in service[1].lower()
+
+# Display resources according to filters
 for category, services in resources.items():
-    st.subheader(category)
-    for name, description, link in services:
-        st.markdown(f"- **{name}**: {description} [🔗 Link]({link})")
+    if category_filter != "All" and category != category_filter:
+        continue
+
+    # Filter services based on search term
+    filtered_services = [s for s in services if match_service(s, search_term)]
+
+    if filtered_services:
+        st.subheader(category)
+        for name, description, link in filtered_services:
+            if link:
+                st.markdown(f"- **{name}**: {description} [🔗 Link]({link})")
+            else:
+                st.markdown(f"- **{name}**: {description}")
+
+if not any(
+    match_service(s, search_term) for cat in resources for s in resources[cat]
+    if category_filter == "All" or cat == category_filter
+):
+    st.write("No matching resources found.")
 
 
        
