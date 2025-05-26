@@ -2,7 +2,7 @@
 
 import streamlit as st
 
-st.set_page_config(page_title="Project Madhulika-check n 12", page_icon="🌙")
+st.set_page_config(page_title="Project Madhulika", page_icon="🌙")
 
 # Title and image
 st.title("🌙 Project Madhulika")
