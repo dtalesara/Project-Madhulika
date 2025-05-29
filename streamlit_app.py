@@ -89,20 +89,27 @@ resources = {
 # Sidebar filter
 category_filter = st.sidebar.selectbox("Filter by category", ["All"] + list(resources.keys())) [2]
 
+
+
 if category_filter == "All":
-# Show all categories
-for category, services in resources.items(): [2]
-st.subheader(category) [2]
-# Now that data is consistent, we can assume service is always a 3-tuple
-for service in services: [2]
-name, description, link = service
-st.markdown(f"- **{name}**: {description} [🔗 Link]({link})") [2]
-else:
-# Show only selected category
-services = resources.get(category_filter, []) [5]
-st.subheader(category_filter) [5]
-# Now that data is consistent, we can assume service is always a 3-tuple
-for service in services: [5]
-name, description, link = service
-st.markdown(f"- **{name}**: {description} [🔗 Link]({link})") [5]
+    # Show all categories
+    for category, services in resources.items(): 
+        st.subheader(category)
+        for service in services: 
+            if len(service) == 3:
+                name, description, link = service
+                st.markdown(f"- **{name}**: {description} [🔗 Link]({link})") 
+            else:
+                # if data is incomplete
+                st.markdown(f"- {service}") 
+else: # This 'else' aligns with the 'if' above it
+    # Show only selected category
+    services = resources.get(category_filter, []) 
+    st.subheader(category_filter)
+    for service in services:
+        if len(service) == 3:
+            name, description, link = service
+            st.markdown(f"- **{name}**: {description} [🔗 Link]({link})")
+            st.markdown(f"- {service}") 
+
         
