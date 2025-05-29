@@ -105,24 +105,36 @@ resources = {
         ],
         "🧠 Mental Health Support": [
             ("Samaritans", "Call 116 123 for 24/7 support.", "https://www.samaritans.org/"),
-            ("SHOUT", "Text SHOUT to 85258 for 24/7 crisis support.", "https://giveusashout.org/")
+            ("SHOUT", "Text SHOUT to 85258 for 24/7 crisis support.", "https://www.giveusashout.org/"),
+            ("Mind", "Mental health support and advice.", "https://www.mind.org.uk/")
         ],
         "⚖️ Legal Assistance": [
             ("Citizens Advice", "Free legal advice.", "https://www.citizensadvice.org.uk/")
         ],
         "🏥 Medical Services": [
-            ("NHS", "National Health Service information.", "https://www.nhs.uk/")
+            ("NHS", "Health services and advice.", "https://www.nhs.uk/")
         ],
         "🍲 Food Assistance": [
-            ("Tr
-::contentReference[oaicite:0]{index=0}
+            ("The Trussell Trust", "Find food banks.", "https://www.trusselltrust.org/get-help/find-a-foodbank/")
+        ],
+        "🏠 Shelter Services": [
+            ("Shelter", "Help with housing and homelessness.", "https://england.shelter.org.uk/")
+        ],
+        "📚 Educational Resources": [
+            ("OpenLearn", "Free online courses.", "https://www.open.edu/openlearn/"),
+            ("BBC Bitesize", "Educational resources for students.", "https://www.bbc.co.uk/bitesize")
+        ],
+        "🛡️ Self-Defense Resources": [
+            ("Self-Defense Classes UK", "Find local self-defense classes.", "https://www.selfdefense.co.uk/")
+        ],
+        "💵 Finance": [
+            ("Money Advice Service", "Financial advice and support.", "https://www.moneyadviceservice.org.uk/en")
+        ]
+    }
+}
 
-countries = list(resources.keys())  # This will work fine now
-
-# Set page config
 st.set_page_config(page_title="Project Madhulika", page_icon="🌙", layout="wide")
 
-# Custom CSS...
 st.markdown("""
     <style>
     #MainMenu {visibility: hidden;}
@@ -134,19 +146,13 @@ st.markdown("""
 st.title("🌙 Project Madhulika")
 
 st.sidebar.header("🌍 Where are you from?")
-selected_country = st.sidebar.selectbox("Select your country", countries)
+selected_country = st.sidebar.selectbox("Select your country", list(resources.keys()))
 
 st.write(f"Showing resources for **{selected_country}**")
 
 country_resources = resources[selected_country]
 
-# Display the resources for selected country (example)
 for category, items in country_resources.items():
-    st.subheader(category)
-    for name, desc, link in items:
-        st.markdown(f"**{name}** - {desc}  \n[More Info]({link})")
-
-       
-                
-
-        
+    with st.expander(category, expanded=True):
+        for name, desc, link in items:
+            st.markdown(f"**{name}** - {desc}  \n[More Info]({link})")
