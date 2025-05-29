@@ -1,31 +1,5 @@
 import streamlit as st
-import speech_recognition as sr
 
-# Set page config
-st.set_page_config(page_title="Project Madhulika", page_icon="🌙", layout="wide")
-
-# Custom CSS to hide Streamlit header/menu/footer for a cleaner look
-st.markdown("""
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-    </style>
-""", unsafe_allow_html=True)
-
-# Title with moon emoji
-st.title("🌙 Project Madhulika")
-
-countries = list(resources.keys())  # Extract keys, i.e. country names
-
-st.sidebar.header("🌍 Where are you from?")
-selected_country = st.sidebar.selectbox("Select your country", countries)
-
-st.write(f"Showing resources for **{selected_country}**")
-
-# Then access resources using selected_country:
-country_resources = resources[selected_country]
-# --- Resources dictionary ---
 resources = {
     "South Africa": {
         "📞 Emergency Services": [
@@ -142,7 +116,35 @@ resources = {
         "🍲 Food Assistance": [
             ("Tr
 ::contentReference[oaicite:0]{index=0}
- 
+
+countries = list(resources.keys())  # This will work fine now
+
+# Set page config
+st.set_page_config(page_title="Project Madhulika", page_icon="🌙", layout="wide")
+
+# Custom CSS...
+st.markdown("""
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
+
+st.title("🌙 Project Madhulika")
+
+st.sidebar.header("🌍 Where are you from?")
+selected_country = st.sidebar.selectbox("Select your country", countries)
+
+st.write(f"Showing resources for **{selected_country}**")
+
+country_resources = resources[selected_country]
+
+# Display the resources for selected country (example)
+for category, items in country_resources.items():
+    st.subheader(category)
+    for name, desc, link in items:
+        st.markdown(f"**{name}** - {desc}  \n[More Info]({link})")
 
        
                 
