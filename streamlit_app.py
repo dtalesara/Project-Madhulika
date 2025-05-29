@@ -69,7 +69,7 @@ resources = {
 
    
 ],
-    "finance": [
+    " 💵Finance": [
     ("💵 Women’s Development Bank: https://www.wdb.co.za/"),
     ("🛡️ South African Social Security Agency (SASSA) – Social grants: https://www.sassa.gov.za/"),
     ("🛡️ Unemployment Insurance Fund (UIF): https://www.labour.gov.za/uif"),
