@@ -16,6 +16,15 @@ st.markdown("""
 # Title with moon emoji
 st.title("🌙 Project Madhulika")
 
+countries = list(resources.keys())  # Extract keys, i.e. country names
+
+st.sidebar.header("🌍 Where are you from?")
+selected_country = st.sidebar.selectbox("Select your country", countries)
+
+st.write(f"Showing resources for **{selected_country}**")
+
+# Then access resources using selected_country:
+country_resources = resources[selected_country]
 # --- Resources dictionary ---
 resources = {
     "South Africa": {
