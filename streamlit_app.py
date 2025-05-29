@@ -70,11 +70,11 @@ resources = {
    
 ],
     "finance": [
-    "💵 Women’s Development Bank: https://www.wdb.co.za/",
-    "🛡️ South African Social Security Agency (SASSA) – Social grants: https://www.sassa.gov.za/",
-    "🛡️ Unemployment Insurance Fund (UIF): https://www.labour.gov.za/uif",
-    "📱 FNB eWallet (No bank account needed) – Mobile money transfer: https://www.online.fnb.co.za/send-money/eWallet.html",
-    "📈 Learn how to grow a business – Goldman Sachs 10,000 Women (Free on Coursera): https://www.coursera.org/collections/goldman-sachs-10000-women"
+    ("💵 Women’s Development Bank: https://www.wdb.co.za/"),
+    ("🛡️ South African Social Security Agency (SASSA) – Social grants: https://www.sassa.gov.za/"),
+    ("🛡️ Unemployment Insurance Fund (UIF): https://www.labour.gov.za/uif"),
+    ("📱 FNB eWallet (No bank account needed) – Mobile money transfer: https://www.online.fnb.co.za/send-money/eWallet.html"),
+    ("📈 Learn how to grow a business – Goldman Sachs 10,000 Women (Free on Coursera): https://www.coursera.org/collections/goldman-sachs-10000-women")
 ]
 }
 
