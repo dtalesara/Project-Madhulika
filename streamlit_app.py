@@ -1,7 +1,5 @@
 import streamlit as st
-import geocoder
-import re
-import speech_recognition as sr
+
 
 # Set page config with your moon logo and baby pink theme colors applied in .streamlit/config.toml
 st.set_page_config(page_title="Project Madhulika", page_icon="your_logo.png", layout="wide")
